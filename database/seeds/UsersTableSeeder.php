@@ -16,10 +16,11 @@ class UsersTableSeeder extends Seeder
       User::insert($users->toArray());
 
       $user = User::find(1);
-        $user->name = 'feliks';
-        $user->email = '547276540@qq.com';
-        $user->password = '111111';
+        $user->name = 'Aufree';
+        $user->email = 'aufree@estgroupe.com';
+        $user->password = 'password';
         $user->is_admin = true;
+        $user->activated = true;
         $user->save();
     }
 }
